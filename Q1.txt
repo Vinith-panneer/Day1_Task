@@ -1,0 +1,27 @@
+HTTP/1.1:
+
+1.This version relies on a series of sequential requests and responses. Each request requires its connection, leading to head-of-line blocking and inefficiency.
+
+2.Headers are sent in plaintext with each request, resulting in unnecessary overhead and larger data transfer.
+
+3.Uses a text-based protocol, which is human-readable but less efficient for computers to parse.
+
+4.Lacks the ability for the server to push resources to the client without explicit requests, leading to additional latency in fetching required assets.
+
+5.Encryption (HTTPS) is optional, which can pose security risks and hinder user privacy.
+
+HTTP/2:
+
+1.Header compression is a feature of HTTP/2 that reduces redundancy in headers, saving bandwidth and improving performance.
+
+2.Adopts a binary protocol, making it more machine-friendly and quicker to process.
+
+3.Supports server push, allowing servers to preemptively send assets like images, CSS, and JavaScript, reducing page load times.
+
+4.Encourages the use of encryption through TLS, enhancing security and user data protection.
+
+
+
+
+
+
